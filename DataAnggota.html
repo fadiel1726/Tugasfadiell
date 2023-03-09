@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <title>Form Anggota</title>
+    </head>
+    <link rel="stylesheet" href="cdd.css">
+    <script src="validasi.js"></script>
+<body>
+    <div class="container">
+        <form method="post" action="" name="frmanggota" onsubmit="return cekform()">
+            <h4>Input Data Anggota</h4><br>
+            <div class="menu">
+                <label>Id Anggota : </label>
+                <input placeholder="Masukan Id" type="number" name="id" id="id">
+            </div>
+            <div class="menu">
+                <label>Nama : </label>
+                <input placeholder="Masukan Nama" type="text" name="txtnama" id="txtnama">
+            </div>
+            <table>
+                <tr>
+                    <td>Jenis Kelamin : </td>
+                    <td><input type="radio" name="txtjenis" value="P">Pria &nbsp;&nbsp;</td> 
+                    <td><input type="radio" name="txtjenis" value="W">Wanita &nbsp;&nbsp;</td>
+                </tr>
+            </table>
+            <div class="menu">
+                <label>Alamat : </label>
+                <textarea name="txtalamat" cols="50" rows="3"></textarea>
+            </div>
+                <input type="submit" name="tblsimpan" value="Simpan">
+        </form>
+    </div>
+</body>
+</html>

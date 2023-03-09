@@ -1,0 +1,96 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.header {
+    background-image: url(wave.svg);
+    text-align: center;
+}
+
+.header i {
+    font-size: 12px;
+}
+
+.berjalan {
+    padding: 2px;
+    background-color: bisque;
+    color: rebeccapurple;
+}
+
+.nav {
+    background-image: url(xa.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 700px;
+    line-height: 0.8cm;
+    float: left;
+    width: 100%;
+    display: flex;
+}
+
+.sidebar {
+    width: 15%;
+    height: 700px;
+    background: darkgoldenrod;
+}
+
+.sidebar h4 {
+    background-color: bisque;
+}
+
+.isi p a {
+    text-decoration: none;
+    color: #fff;
+    margin: 10px;
+    padding: 2px 5px;
+    border: 1px solid;
+    transition: 0.06s;
+    text-align: left;
+}
+
+p a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+ul li {
+    display: block;
+    margin: 10px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 2px 5px;
+    border: 1px solid;
+    transition: 0.06s;
+}
+
+ul li a:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.article {
+    padding: 20px;
+}
+
+.article p {
+    border: 1px solid;
+    padding: 2px 5px;
+    width: 1000px;
+}
+
+.article h1 {
+    text-align: center;
+    color: white;
+    line-height: 2cm;
+}
+
+.article h5 {
+    text-align: center;
+    margin-top: 100px;
+    color: red;
+    font-size: 20px;
+}
