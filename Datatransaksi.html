@@ -4,7 +4,7 @@
     <title>Tugas Form Perpustakaan</title>
   </head>
   <link rel="stylesheet" type="text/css" href="css/style.css" />
-  <script src="js/validasi.js"></script>
+  <script src="js/validasi3.js"></script>
   <body>
     <!--header-->
     <header class="header">
@@ -36,36 +36,40 @@
         </div>
       </aside>
 
-      <div class="container">
-        <h2 class="sub">INPUT DATA ANGGOTA</h2>
-        <form method="post" action="" name="dataanggota" onsubmit="return cekform()">
+      <div class="container3">
+        <h2 class="sub">PEMINJAMAN BUKU</h2>
+        <form method="post" action="" name="datapinjam" onsubmit="return cekform()">
           <div class="isi">
             <div class="isi-box">
-              <span class="details"> Id Anggota </span>
-              <input placeholder="Masukan id Anggota" type="number" name="id" id="id">
+              <span class="details">Id Angggota</span>
+              <input placeholder="Masukan id Peminjam" type="number" name="id" id="id" /><br />
             </div>
             <div class="isi-box">
-              <span class="details">Nama :</span> 
-              <input placeholder="Masukan Nama" type="text" name="txtnama" id="txtnama">
+              <span class="details">Nama Anggota</span>
+              <input placeholder="Masukan Nama" type="text" name="txtnama" id="txtnama" /> <br />
             </div>
             <div class="isi-box">
-              <span class="details">Alamat</span> 
-              <input name="txtalamat" cols="50" rows="3" id="txtalamat"><br>
+              <span class="details">Id Buku</span>
+              <input placeholder="Masukan Id Buku" type="number" name="txtid" id="txtid" /><br />
+            </div>
+            <div class="isi-box">
+              <span class="details">Judul Buku</span>
+              <input placeholder="Masukan Judul Buku" type="text" name="txtjudul" id="txtjudul" /><br />
+            </div>
+            <div class="isi-box">
+              <span class="details">Tanggal Peminjaman</span>
+              <input type="date" /><br />
+            </div>
+            <div class="isi-box">
+              <span class="details">Tanggal Kembali</span>
+              <input type="date" /><br />
             </div>
           </div>
-          <div class="box2">
-            <span class="box-titile">Jenis Kelamin</span>
-            <div class="category">
-              <input type="radio" name="gender">Pria
-              <input type="radio" name="gender">Wanita
-            </div>
+          <div class="button3">
+            <input type="submit" name="tblsimpan" value="Save" />
           </div>
-          <div class="button">
-            <input type="submit" value="Simpan">
-            <input type="reset" value="Hapus">
-          </div>
+        </form>
       </div>
-      </form>
     </main>
   </body>
 </html>

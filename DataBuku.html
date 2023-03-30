@@ -1,0 +1,96 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Tugas Form Perpustakaan</title>
+  </head>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script src="js/validasi2.js"></script>
+  <body>
+    <!--header-->
+    <header class="header">
+      <h1>Perpustakaan Politeknik Negeri Lhokseumawe</h1>
+      <i>jln.Buket Rata, Kec.Blang Mangat, Kab. Lhokseumawe</i><br />
+      <i>Telp (+62) 82267264699</i>
+      <nav>
+        <marquee bgcolor="bisque"><h4>Hai Mahasiswa!!</h4></marquee>
+      </nav>
+    </header>
+    <!--content-->
+    <main>
+      <aside>
+        <div class="sidebar">
+          <p class="s"><a href="Tugasformperpus.html">Beranda</a><br /></p>
+          <h4>Entry Data Dan Transaksi</h4>
+          <ul>
+            <li><a href="DataAnggota.html">Data Anggota</a></li>
+            <li><a href="DataBuku.html">Data Buku</a></li>
+            <li><a href="Datatransaksi.html">Transaksi Peminjaman</a></li>
+          </ul>
+          <h4>Laporan</h4>
+          <ul>
+            <li><a href="Lap-Data-Anggota">Laporan Data Anggota</a></li>
+            <li><a href="Lap-Data-Buku">Laporan Data Buku</a></li>
+          </ul>
+          <br />
+          <img src="images/bee.png" width="150px" height="100px" alt="" />
+        </div>
+      </aside>
+
+      <div class="container2">
+        <h2 class="sub">DATA BUKU</h2>
+        <form method="post" action="" name="databuku" onsubmit="return cekform()">
+          <div class="isi">
+            <div class="isi-box">
+              <span class="details">Id Buku</span>
+              <input placeholder="Masukan id Buku" type="number" name="id" id="id" /><br />
+            </div>
+            <div class="isi-box">
+              <span class="details">Judul Buku</span>
+              <input placeholder="Masukan Judul Buku" type="text" name="txtjudul" id="txtjudul" /><br />
+            </div>
+            <div class="isi-box">
+              <span class="details">Penerbit</span>
+              <input placeholder="Masukan Penerbit" type="text" name="txtpenerbit" id="txtpenerbit" /><br />
+            </div>
+            <div class="isi-box">
+              <span class="details">Pengarang</span>
+              <input placeholder="Masukan Pengarang" type="text" name="txtpengarang" id="txtpengarang" /><br />
+            </div>
+            <div class="isi-box">
+              <span class="details">Jenis Buku</span>
+              <select name="jenisbuku">
+                <option value="" disabled selected hidden>Select</option>
+                <option value="komik">Komik</option>
+                <option value="bukupelajaran">Buku Pelajaran</option>
+                <option value="bukubahasa">Buku Bahasa</option>
+                <option value="pemograman">Buku Pemograman</option>
+                <option value="majalah">Majalah</option>
+                <option value="wirausaha">Buku Wirausaha</option>
+              </select>
+            </div>
+            <div class="isi-box">
+              <span class="details">Nomor Rak</span>
+              <select type="number" name="txtrak">
+                <option value="" disabled selected hidden>Select</option>
+                <option value="rak1">Rak 01</option>
+                <option value="rak2">Rak 02</option>
+                <option value="rak3">Rak 03</option>
+                <option value="rak4">Rak 04</option>
+                <option value="rak5">Rak 05</option>
+                <option value="rak6">Rak 06</option>
+                <option value="rak7">Rak 07</option>
+                <option value="rak8">Rak 08</option>
+                <option value="rak9">Rak 09</option>
+                <option value="rak10">Rak 10</option></select
+              ><br />
+            </div>
+          </div>
+          <div class="button2">
+            <input type="submit" name="tblsimpan" value="Simpan" />
+            <input type="reset" name="tblreset" value="Hapus" />
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
